@@ -5848,6 +5848,10 @@ body.no-scroll, body.show-sidebar {
     }
 }
 
+.main {
+    padding-top: 160px;
+}
+
 .btn {
     display: inline-block;
     vertical-align: text-top;
@@ -5935,6 +5939,11 @@ body.no-scroll, body.show-sidebar {
 
 .header {
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    background: #fcfcfc;
 }
 
 .header__inner {
@@ -5961,6 +5970,13 @@ body.no-scroll, body.show-sidebar {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+}
+
+@media (max-width: 991px) {
+    .header__left {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
 }
 
 .header__right {
@@ -6076,6 +6092,48 @@ body.no-scroll, body.show-sidebar {
     height: 16px;
 }
 
+@media (max-width: 991px) {
+    .nav-left-mobile .nav__list {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 20px 20px 0;
+        position: fixed;
+        z-index: 101;
+        top: 11%;
+        right: 0;
+        max-width: 300px;
+        width: 100%;
+        background: #f2f2f2;
+    }
+
+    .nav-left-mobile .nav__list .nav__item {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .nav-bottom-mobile {
+        max-width: 300px;
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+        position: fixed;
+        z-index: 101;
+        top: 30%;
+        right: 0;
+        background: #f2f2f2;
+    }
+
+    .nav-bottom-mobile .nav .nav__list {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .nav-bottom-mobile .nav .nav__list .nav__item {
+        width: 100%;
+        padding: 14px;
+    }
+}
+
 .footer {
     padding: 40px 0;
     background: #004f87;
@@ -6169,11 +6227,7 @@ body.no-scroll, body.show-sidebar {
     border: none;
     font-size: 0;
     color: transparent;
-    position: absolute;
-    top: 50%;
-    right: 1.5rem;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    position: relative;
 }
 
 .burger::before, .burger::after,
