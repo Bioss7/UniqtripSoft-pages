@@ -86,47 +86,47 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./srcassets/js/app.js":
+/***/ "./src/assets/js/app.js":
 /*!******************************!*\
-  !*** ./srcassets/js/app.js ***!
+  !*** ./src/assets/js/app.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n\n//# sourceURL=webpack:///./srcassets/js/app.js?");
+eval("\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
 
 /***/ }),
 
-/***/ "./srcassets/js/mobileNav.js":
+/***/ "./src/assets/js/mobileNav.js":
 /*!************************************!*\
-  !*** ./srcassets/js/mobileNav.js ***!
+  !*** ./src/assets/js/mobileNav.js ***!
   \************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var burger = document.querySelector('.js-burger');\nvar sidebar = document.getElementById('sidebar');\nvar page = document.getElementById('page');\nvar body = document.body;\nburger.addEventListener('click', function (event) {\n  if (body.classList.contains('show-sidebar')) {\n    closeSidebar();\n  } else {\n    showSidebar();\n  }\n});\n\nfunction showSidebar() {\n  var mask = document.createElement('div');\n  mask.classList.add('page__mask');\n  mask.addEventListener('click', closeSidebar);\n  page.appendChild(mask);\n  body.classList.add('show-sidebar');\n}\n\nfunction closeSidebar() {\n  body.classList.remove('show-sidebar');\n  document.querySelector('.page__mask').remove();\n}\n\n//# sourceURL=webpack:///./srcassets/js/mobileNav.js?");
+eval("var burger = document.querySelector('.js-burger');\nvar sidebar = document.getElementById('sidebar');\nvar page = document.getElementById('page');\nvar body = document.body;\nburger.addEventListener('click', function (event) {\n  if (body.classList.contains('show-sidebar')) {\n    closeSidebar();\n  } else {\n    showSidebar();\n  }\n});\n\nfunction showSidebar() {\n  var mask = document.createElement('div');\n  mask.classList.add('page__mask');\n  mask.addEventListener('click', closeSidebar);\n  page.appendChild(mask);\n  body.classList.add('show-sidebar');\n}\n\nfunction closeSidebar() {\n  body.classList.remove('show-sidebar');\n  document.querySelector('.page__mask').remove();\n}\n\n//# sourceURL=webpack:///./src/assets/js/mobileNav.js?");
 
 /***/ }),
 
-/***/ "./srcassets/js/tabs.js":
+/***/ "./src/assets/js/tabs.js":
 /*!*******************************!*\
-  !*** ./srcassets/js/tabs.js ***!
+  !*** ./src/assets/js/tabs.js ***!
   \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("if (document.querySelector(\".tabs-ui__btn\")) {\n  var onTabClick = function onTabClick(item) {\n    item.addEventListener(\"click\", function () {\n      var currentBtn = item;\n      var tabId = currentBtn.getAttribute(\"data-tab\");\n      var currentTab = document.querySelector(tabId);\n\n      if (!currentBtn.classList.contains('active')) {\n        tabsBtn.forEach(function (item) {\n          item.classList.remove('active');\n        });\n        tabsItems.forEach(function (item) {\n          item.classList.remove('active');\n        });\n        currentBtn.classList.add('active');\n\n        if (currentTab !== null) {\n          currentTab.classList.add('active');\n        }\n      }\n    });\n  };\n\n  console.warn(\"Initialization Tabs\");\n  var tabsBtn = document.querySelectorAll(\".tabs-ui__btn\");\n  var tabsItems = document.querySelectorAll(\".tabs__item\");\n  tabsBtn.forEach(onTabClick);\n  document.querySelector('.tabs-ui__btn').click();\n}\n\n//# sourceURL=webpack:///./srcassets/js/tabs.js?");
+eval("if (document.querySelector(\".tabs-ui__btn\")) {\n  var onTabClick = function onTabClick(item) {\n    item.addEventListener(\"click\", function () {\n      var currentBtn = item;\n      var tabId = currentBtn.getAttribute(\"data-tab\");\n      var currentTab = document.querySelector(tabId);\n\n      if (!currentBtn.classList.contains('active')) {\n        tabsBtn.forEach(function (item) {\n          item.classList.remove('active');\n        });\n        tabsItems.forEach(function (item) {\n          item.classList.remove('active');\n        });\n        currentBtn.classList.add('active');\n\n        if (currentTab !== null) {\n          currentTab.classList.add('active');\n        }\n      }\n    });\n  };\n\n  console.warn(\"Initialization Tabs\");\n  var tabsBtn = document.querySelectorAll(\".tabs-ui__btn\");\n  var tabsItems = document.querySelectorAll(\".tabs__item\");\n  tabsBtn.forEach(onTabClick);\n  document.querySelector('.tabs-ui__btn').click();\n}\n\n//# sourceURL=webpack:///./src/assets/js/tabs.js?");
 
 /***/ }),
 
 /***/ 0:
 /*!*****************************************************************************************!*\
-  !*** multi ./srcassets/js/app.js ./srcassets/js/mobileNav.js ./srcassets/js/tabs.js ***!
+  !*** multi ./src/assets/js/app.js ./src/assets/js/mobileNav.js ./src/assets/js/tabs.js ***!
   \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! D:\\Programming\\Projects\\UI\\UniqtripSoft\\src\\assets\\js\\app.js */\"./srcassets/js/app.js\");\n__webpack_require__(/*! D:\\Programming\\Projects\\UI\\UniqtripSoft\\src\\assets\\js\\mobileNav.js */\"./srcassets/js/mobileNav.js\");\nmodule.exports = __webpack_require__(/*! D:\\Programming\\Projects\\UI\\UniqtripSoft\\src\\assets\\js\\tabs.js */\"./srcassets/js/tabs.js\");\n\n\n//# sourceURL=webpack:///multi_./srcassets/js/app.js_./srcassets/js/mobileNav.js_./srcassets/js/tabs.js?");
+eval("__webpack_require__(/*! D:\\Programming\\Projects\\UI\\UniqtripSoft\\src\\assets\\js\\app.js */\"./src/assets/js/app.js\");\n__webpack_require__(/*! D:\\Programming\\Projects\\UI\\UniqtripSoft\\src\\assets\\js\\mobileNav.js */\"./src/assets/js/mobileNav.js\");\nmodule.exports = __webpack_require__(/*! D:\\Programming\\Projects\\UI\\UniqtripSoft\\src\\assets\\js\\tabs.js */\"./src/assets/js/tabs.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/app.js_./src/assets/js/mobileNav.js_./src/assets/js/tabs.js?");
 
 /***/ })
 
