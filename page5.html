@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.min-fb44faf8.css" />
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <link rel="stylesheet" href="/assets/css/style.min-0a1e7238.css" />
     <title>Page 5</title>
     
 </head>
@@ -20,7 +19,9 @@
                     <div class="header__top">
                         <div class="header__left">
                             <div class="header__logo">
-                                <img src="assets/images/logo.svg" alt="logo">
+                                <a href="/">
+                                    <img src="assets/images/logo.svg" alt="logo">
+                                </a>
                             </div>
                             <nav class="nav nav-left-mobile">
                                 <ul class="nav__list">
@@ -124,7 +125,7 @@
             <div class="banner-project">
                 <div class="container">
                     <div class="banner-project__inner">
-                        <img class="banner-project__img" src="assets/images/macbook.png" alt="">
+                        <img class="banner-project__img" src="/assets/images/macbook.png" alt="">
                     </div>
                 </div>
             </div>
@@ -158,10 +159,10 @@
                             <div class="js-slider-swiper slider-swiper swiper">
                                 <div class="slider-swiper__wrapper swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img class="slider-swiper-img" src="assets/images/slides-about-project/slide-final-design_01.png" alt="">
+                                        <img class="slider-swiper-img" src="/assets/images/slides-about-project/slide-final-design_01.png" alt="">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img class="slider-swiper-img" src="assets/images/slides-about-project/slide-final-design_02.png" alt="">
+                                        <img class="slider-swiper-img" src="/assets/images/slides-about-project/slide-final-design_02.png" alt="">
                                     </div>
                                 </div>
                                 <div class="swiper-pagination swiper-pagination--mobile"></div>
@@ -176,16 +177,16 @@
                             <div class="js-slider-swiper-mobile slider-swiper swiper">
                                 <div class="slider-swiper__wrapper swiper-wrapper">
                                     <div class="swiper-slide swiper-slide--mobile">
-                                        <img class="slider-swiper-img" src="assets/images/slides-about-project/mobile-adaptation_01.png" alt="">
+                                        <img class="slider-swiper-img" src="/assets/images/slides-about-project/mobile-adaptation_01.png" alt="">
                                     </div>
                                     <div class="swiper-slide swiper-slide--mobile">
-                                        <img class="slider-swiper-img" src="assets/images/slides-about-project/mobile-adaptation_02.png" alt="">
+                                        <img class="slider-swiper-img" src="/assets/images/slides-about-project/mobile-adaptation_02.png" alt="">
                                     </div>
                                     <div class="swiper-slide swiper-slide--mobile">
-                                        <img class="slider-swiper-img" src="assets/images/slides-about-project/mobile-adaptation_03.png" alt="">
+                                        <img class="slider-swiper-img" src="/assets/images/slides-about-project/mobile-adaptation_03.png" alt="">
                                     </div>
                                     <div class="swiper-slide swiper-slide--mobile">
-                                        <img class="slider-swiper-img" src="assets/images/slides-about-project/mobile-adaptation_03.png" alt="">
+                                        <img class="slider-swiper-img" src="/assets/images/slides-about-project/mobile-adaptation_03.png" alt="">
                                     </div>
                                 </div>
                                 <div class="swiper-pagination swiper-pagination--mobile"></div>
@@ -199,28 +200,28 @@
             <section class="section">
                 <div class="container">
                     <h2 class="title">Понравился проект? <br>Будем рады поработать над вашим проектом!</h2>
-                    <form class="form form--orange" action="/" method="post">
+                    <form class="form-js form form--orange" action="https://uniqtrip.tmweb.ru/feedback">
                         <div class="form__inner form__inner--orange">
                             <div class="form__group">
                                 <label for="email">E-mail</label>
-                                <input class="form__control" id="email" type="text" placeholder="Ваш e-mail">
+                                <input class="form__control js-req js-email" id="email" type="text" placeholder="Ваш e-mail" name="email">
                             </div>
                             <div class="form__group">
                                 <label for="name">Ваше имя</label>
-                                <input class="form__control" id="name" type="text" placeholder="Ваш имя">
+                                <input class="form__control js-req" id="name" type="text" placeholder="Ваш имя" name="name">
                             </div>
                         </div>
                         <div class="form__group form__group--note">
                             <label for="" id="message">Сообщение</label>
-                            <textarea class="form__control form__control--textarea" id="message" type="text" placeholder="Напишите нам"></textarea>
+                            <textarea class="form__control form__control--textarea js-req" id="message" type="text" placeholder="Напишите нам" name="message"></textarea>
                         </div>
                         <div class="form__note">
                             *Нажимая кнопку, вы даете свое согласие на обработку <a href="#">персональных данных</a>
                         </div>
                        
                        
-                        <div class="form__group form__group--btn">
-                            <button class="btn btn--blue" type="button" value="Отправить">Отправить</button>
+                        <div class="form__group form__group--btn loader-btn">
+                            <button class="btn btn--blue" type="submit" value="Отправить">Отправить</button>
                         </div>
                     </form>
                 </div>
@@ -233,7 +234,7 @@
                     <div class="js-slider-swiper-project slider-swiper slider-swiper--project swiper">
                         <div class="slider-swiper__wrapper swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="projects__card" style="background-image: url('assets/images/project/01.png');">
+                                <div class="projects__card" style="background-image: url('/assets/images/project/01.png');">
                                     <div class="projects__content">
                                         <div class="projects__title">
                                             Visit-sochi.com
@@ -245,7 +246,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="projects__card" style="background-image: url('assets/images/project/02.png');">
+                                <div class="projects__card" style="background-image: url('/assets/images/project/02.png');">
                                     <div class="projects__content">
                                         <div class="projects__title">
                                             Visit-sochi.com
@@ -257,7 +258,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="projects__card" style="background-image: url('assets/images/project/02.png');">
+                                <div class="projects__card" style="background-image: url('/assets/images/project/02.png');">
                                     <div class="projects__content">
                                         <div class="projects__title">
                                             Visit-sochi.com
@@ -283,15 +284,15 @@
                 <div class="footer__inner">
                     <div class="footer__col">
                         <div class="footer__logo">
-                            <img src="assets/images/logo-footer.svg" alt="">
+                            <img src="/assets/images/logo-footer.svg" alt="">
                         </div>
                         <div class="contacts contacts--footer">
                             <a class="contacts-link" href="tel:7(862)2777042">
-                                <img class="contacts-icon" src="assets/images/phone-white.svg" alt="">
+                                <img class="contacts-icon" src="/assets/images/phone-white.svg" alt="">
                                 +7 (862) 277 70 42
                             </a>
                             <a class="contacts-link" href="mailto:info@designmodo.com">
-                                <img class="contacts-icon" src="assets/images/mail-white.svg" alt="">
+                                <img class="contacts-icon" src="/assets/images/mail-white.svg" alt="">
                                 info@designmodo.com
                             </a>
                         </div>
@@ -355,7 +356,9 @@
         </footer>    </div>
 
     <!-- JS -->
-    <script src="assets/js/app-c8429319.js"></script>
+    <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="/assets/js/app-106f7703.js"></script>
+    <!-- <script src="/assets/js/vendor/forms.js"></script> -->
 </body>
 
 </html>
