@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.min-70fb6102.css" />
+    <link rel="stylesheet" href="assets/css/style.min-9fc1d7de.css" />
     <title>404</title>
     
 </head>
@@ -26,16 +26,16 @@
                             <nav class="nav nav-left-mobile">
                                 <ul class="nav__list">
                                     <li class="nav__item">
-                                        <a class="nav__link" href="#">Главная</a>
+                                        <a class="nav__link" href="/">Главная</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a class="nav__link" href="#">Проекты</a>
+                                        <a class="nav__link" href="/projects.html">Проекты</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a class="nav__link" href="#">О компании</a>
+                                        <a class="nav__link" href="/copmany.html">О компании</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a class="nav__link" href="#">Контакты</a>
+                                        <a class="nav__link" href="/contact-us.html">Контакты</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -51,14 +51,6 @@
                                                 </ul>
                                             </div>
                                         </form>
-                                    </li>
-                                    <li class="nav__item">
-                                        <a class="nav__link has-subnav" href="#">RUS</a>
-                                        <ul class="subnav">
-                                            <li>
-                                                <a class="subnav__link" href="#">EN</a>
-                                            </li>
-                                        </ul>
                                     </li>
                                 </ul>
                             </nav>
@@ -92,16 +84,16 @@
                     <nav class="mobile-menu">
                         <ul class="nav__list">
                             <li class="nav__item">
-                                <a class="nav__link" href="#">Главная</a>
+                                <a class="nav__link" href="/">Главная</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="#">Проекты</a>
+                                <a class="nav__link" href="/projects.html">Проекты</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="#">О компании</a>
+                                <a class="nav__link" href="/company">О компании</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="#">Контакты</a>
+                                <a class="nav__link" href="/contact-us.html">Контакты</a>
                             </li>
                             <li class="nav__item">
                                 <a class="nav__link" href="#">Битрикс 24</a>
@@ -157,9 +149,9 @@
                                 <img class="contacts-icon" src="assets/images/phone-white.svg" alt="">
                                 +7 (862) 277 70 42
                             </a>
-                            <a class="contacts-link" href="mailto:info@designmodo.com">
+                            <a class="contacts-link" href="mailto:info@uniqtripsoft.ru">
                                 <img class="contacts-icon" src="assets/images/mail-white.svg" alt="">
-                                info@designmodo.com
+                                info@uniqtripsoft.ru
                             </a>
                         </div>
                     </div>
@@ -193,16 +185,16 @@
                             <div class="footer-nav__title">Компания</div>
                             <ul class="footer-nav__list">
                                 <li class="footer-nav__item">
-                                    <a class="footer-nav__link" href="#">Команда</a>
+                                    <a class="footer-nav__link" href="/our-team.html">Команда</a>
                                 </li>
                                 <li class="footer-nav__item">
-                                    <a class="footer-nav__link" href="#">Вакансии</a>
+                                    <a class="footer-nav__link" href="https://sochi.hh.ru/employer/4322397">Вакансии</a>
                                 </li>
                                 <li class="footer-nav__item">
-                                    <a class="footer-nav__link" href="#">Проекты</a>
+                                    <a class="footer-nav__link" href="/projects.html">Проекты</a>
                                 </li>
                                 <li class="footer-nav__item">
-                                    <a class="footer-nav__link" href="#">Контакты</a>
+                                    <a class="footer-nav__link" href="/contact-us.html">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -212,19 +204,52 @@
                             <div class="footer-nav__title">Поддержка</div>
                             <ul class="footer-nav__list">
                                 <li class="footer-nav__item">
-                                    <a class="footer-nav__link" href="#">Заказать звонок </a>
+                                    <button class="footer-nav__link" type="button" data-modal="js-form-modal-contact">Заказать звонок</button>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
             </div>
-        </footer>    </div>
+        </footer>
+        
+        <!-- modal -->
+        <div class="container">
+            <div class="modal js-form-modal-contact">
+                <div class="modal__content modal__content--contact">
+                    <button class="modal__close" type="button">
+                    </button>
+        
+                    <form class="js-form form form--feedback" action="https://uniqtrip.tmweb.ru/feedback">
+                        <div class="form__group">
+                            <label for="">E-mail</label>
+                            <input class="form__control js-req js-email" type="email" placeholder="Ваш e-mail" name="email" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="">Ваше имя</label>
+                            <input class="form__control js-req" type="text" placeholder="Имя" name="name">
+                        </div>
+                        <div class="form__group">
+                            <label for="">Телефон</label>
+                            <input class="form__control js-req js-phone" type="text" name="phone">
+                        </div>
+                        <div class="form__group">
+                            <label for="">Cообщение</label>
+                            <textarea class="form__control form__control--textarea js-req" type="text"
+                                placeholder="Напишите нам" name="message"></textarea>
+                        </div>
+                        <div class="form__group form__group--btn form__group--contact">
+                            <button class="btn btn--blue js-loader" type="submit" value="Отправить">Отправить</button>
+                        </div>
+                    </form>
+        
+                </div>
+            </div>
+        </div>    </div>
 
     <!-- JS -->
     <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-    <script src="assets/js/app-e8c7bc39.js"></script>
-    <!-- <script src="assets/js/vendor/forms.js"></script> -->
+    <script src="assets/js/app-05b97808.js"></script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.min-70fb6102.css" />
+    <link rel="stylesheet" href="assets/css/style.min-9fc1d7de.css" />
     <title>Page 1</title>
     
 </head>
@@ -26,16 +26,16 @@
                             <nav class="nav nav-left-mobile">
                                 <ul class="nav__list">
                                     <li class="nav__item">
-                                        <a class="nav__link" href="#">Главная</a>
+                                        <a class="nav__link" href="/">Главная</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a class="nav__link" href="#">Проекты</a>
+                                        <a class="nav__link" href="/projects.html">Проекты</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a class="nav__link" href="#">О компании</a>
+                                        <a class="nav__link" href="/copmany.html">О компании</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a class="nav__link" href="#">Контакты</a>
+                                        <a class="nav__link" href="/contact-us.html">Контакты</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -51,14 +51,6 @@
                                                 </ul>
                                             </div>
                                         </form>
-                                    </li>
-                                    <li class="nav__item">
-                                        <a class="nav__link has-subnav" href="#">RUS</a>
-                                        <ul class="subnav">
-                                            <li>
-                                                <a class="subnav__link" href="#">EN</a>
-                                            </li>
-                                        </ul>
                                     </li>
                                 </ul>
                             </nav>
@@ -92,16 +84,16 @@
                     <nav class="mobile-menu">
                         <ul class="nav__list">
                             <li class="nav__item">
-                                <a class="nav__link" href="#">Главная</a>
+                                <a class="nav__link" href="/">Главная</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="#">Проекты</a>
+                                <a class="nav__link" href="/projects.html">Проекты</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="#">О компании</a>
+                                <a class="nav__link" href="/company">О компании</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="#">Контакты</a>
+                                <a class="nav__link" href="/contact-us.html">Контакты</a>
                             </li>
                             <li class="nav__item">
                                 <a class="nav__link" href="#">Битрикс 24</a>
@@ -133,8 +125,10 @@
                             <div class="intro-application">
                                 <div class="intro-application__inner">
                                     <div class="intro-application__content">
-                                        <h1 class="intro-application__title">Бесплатно внедряем Битрикс24 при покупке лицензии Битрикс24</h1>
-                                        <a class="btn btn--white" type="button" href="#">Оставить заявку</a>
+                                        <h1 class="intro-application__title">Бесплатно внедряем Битрикс24 при покупке лицензии
+                                            Битрикс24</h1>
+                                        <button class="btn btn--white" type="button" data-modal="js-form-modal">Оставить
+                                            заявку</button>
                                     </div>
                                 </div>
                             </div>
@@ -143,8 +137,10 @@
                             <div class="intro-application">
                                 <div class="intro-application__inner">
                                     <div class="intro-application__content">
-                                        <h1 class="intro-application__title">Бесплатно внедряем Битрикс24 при покупке лицензии Битрикс24</h1>
-                                        <a class="btn btn--white" type="button" href="#">Оставить заявку</a>
+                                        <h1 class="intro-application__title">Бесплатно внедряем Битрикс24 при покупке лицензии
+                                            Битрикс24</h1>
+                                        <button class="btn btn--white" type="button" data-modal="js-form-modal">Оставить
+                                            заявку</button>
                                     </div>
                                 </div>
                             </div>
@@ -330,14 +326,13 @@
                 </div>
             </section>
             
-            <!-- Slider Успех наших клиентов -->
-            <!-- Slider Успех наших клиентов -->
+            <!-- Успех наших клиентов -->
             <section class="section" id="success-slider">
-               <div class="container">
+                <div class="container">
                     <h2 class="title">
                         Успех наших клиентов
                     </h2>
-                    
+            
                     <div class="swiper-container">
                         <div class="slider-buttons">
                             <div class="swiper-button-prev js-btn-prev"></div>
@@ -347,13 +342,13 @@
                             <div class="slider-swiper__wrapper swiper-wrapper">
                                 <div class="slider-swiper__slide swiper-slide">
                                     <div class="success-card">
-                                       <div class="success-card__inner">
-                                           <img src="assets/images/success/01.svg" alt="success">
-                                           <div class="success-card__title success-card__title--mobile">
+                                        <div class="success-card__inner">
+                                            <img src="assets/images/success/01.svg" alt="success">
+                                            <div class="success-card__title success-card__title--mobile">
                                                 <a href="#">Visit-sochi.com</a>
                                             </div>
-                                       </div>
-                                       <div class="success-card__content">
+                                        </div>
+                                        <div class="success-card__content">
                                             <div class="success-card__title">
                                                 <a href="#">Visit-sochi.com</a>
                                             </div>
@@ -361,25 +356,35 @@
                                                 Выполнены следующие работы:
                                             </div>
                                             <ul class="success-card__list">
-                                                <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
-                                                <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
-                                                <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
-                                                <li>Поддерживаемые типы закупок</li>
-                                                <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
+                                                <li>
+                                                    Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок
+                                                </li>
+                                                <li>
+                                                    Разработан личный кабинет участника, с историей участия и подачи документов
+                                                </li>
+                                                <li>
+                                                    Разработан личный кабинет сотрудника отдела закупок и тендерных процеду
+                                                </li>
+                                                <li>
+                                                    Поддерживаемые типы закупок
+                                                </li>
+                                                <li>
+                                                    Редукцион. на понижение ставок (покупка товаров/услуг)
+                                                </li>
                                             </ul>
                                             <a class="success-card__link" href="#" target="_blank">Подробнее</a>
-                                       </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="slider-swiper__slide swiper-slide">
                                     <div class="success-card">
-                                       <div class="success-card__inner">
-                                           <img src="assets/images/success/01.svg" alt="success">
-                                           <div class="success-card__title success-card__title--mobile">
+                                        <div class="success-card__inner">
+                                            <img src="assets/images/success/01.svg" alt="success">
+                                            <div class="success-card__title success-card__title--mobile">
                                                 <a href="#">Visit-sochi.com</a>
                                             </div>
-                                       </div>
-                                       <div class="success-card__content">
+                                        </div>
+                                        <div class="success-card__content">
                                             <div class="success-card__title">
                                                 <a href="#">Visit-sochi.com</a>
                                             </div>
@@ -387,25 +392,35 @@
                                                 Выполнены следующие работы:
                                             </div>
                                             <ul class="success-card__list">
-                                                <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
-                                                <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
-                                                <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
-                                                <li>Поддерживаемые типы закупок</li>
-                                                <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
+                                                <li>
+                                                    Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок
+                                                </li>
+                                                <li>
+                                                    Разработан личный кабинет участника, с историей участия и подачи документов
+                                                </li>
+                                                <li>
+                                                    Разработан личный кабинет сотрудника отдела закупок и тендерных процеду
+                                                </li>
+                                                <li>
+                                                    Поддерживаемые типы закупок
+                                                </li>
+                                                <li>
+                                                    Редукцион. на понижение ставок (покупка товаров/услуг)
+                                                </li>
                                             </ul>
                                             <a class="success-card__link" href="#" target="_blank">Подробнее</a>
-                                       </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="slider-swiper__slide swiper-slide">
                                     <div class="success-card">
-                                       <div class="success-card__inner">
-                                           <img src="assets/images/success/01.svg" alt="success">
-                                           <div class="success-card__title success-card__title--mobile">
+                                        <div class="success-card__inner">
+                                            <img src="assets/images/success/01.svg" alt="success">
+                                            <div class="success-card__title success-card__title--mobile">
                                                 <a href="#">Visit-sochi.com</a>
                                             </div>
-                                       </div>
-                                       <div class="success-card__content">
+                                        </div>
+                                        <div class="success-card__content">
                                             <div class="success-card__title">
                                                 <a href="#">Visit-sochi.com</a>
                                             </div>
@@ -413,25 +428,35 @@
                                                 Выполнены следующие работы:
                                             </div>
                                             <ul class="success-card__list">
-                                                <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
-                                                <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
-                                                <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
-                                                <li>Поддерживаемые типы закупок</li>
-                                                <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
+                                                <li>
+                                                    Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок
+                                                </li>
+                                                <li>
+                                                    Разработан личный кабинет участника, с историей участия и подачи документов
+                                                </li>
+                                                <li>
+                                                    Разработан личный кабинет сотрудника отдела закупок и тендерных процеду
+                                                </li>
+                                                <li>
+                                                    Поддерживаемые типы закупок
+                                                </li>
+                                                <li>
+                                                    Редукцион. на понижение ставок (покупка товаров/услуг)
+                                                </li>
                                             </ul>
                                             <a class="success-card__link" href="#" target="_blank">Подробнее</a>
-                                       </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="slider-swiper__slide swiper-slide">
                                     <div class="success-card">
-                                       <div class="success-card__inner">
-                                           <img src="assets/images/success/01.svg" alt="success">
-                                           <div class="success-card__title success-card__title--mobile">
+                                        <div class="success-card__inner">
+                                            <img src="assets/images/success/01.svg" alt="success">
+                                            <div class="success-card__title success-card__title--mobile">
                                                 <a href="#">Visit-sochi.com</a>
                                             </div>
-                                       </div>
-                                       <div class="success-card__content">
+                                        </div>
+                                        <div class="success-card__content">
                                             <div class="success-card__title">
                                                 <a href="#">Visit-sochi.com</a>
                                             </div>
@@ -439,21 +464,31 @@
                                                 Выполнены следующие работы:
                                             </div>
                                             <ul class="success-card__list">
-                                                <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
-                                                <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
-                                                <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
-                                                <li>Поддерживаемые типы закупок</li>
-                                                <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
+                                                <li>
+                                                    Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок
+                                                </li>
+                                                <li>
+                                                    Разработан личный кабинет участника, с историей участия и подачи документов
+                                                </li>
+                                                <li>
+                                                    Разработан личный кабинет сотрудника отдела закупок и тендерных процеду
+                                                </li>
+                                                <li>
+                                                    Поддерживаемые типы закупок
+                                                </li>
+                                                <li>
+                                                    Редукцион. на понижение ставок (покупка товаров/услуг)
+                                                </li>
                                             </ul>
                                             <a class="success-card__link" href="#" target="_blank">Подробнее</a>
-                                       </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
-               </div>
+                </div>
             </section>
             
             <!-- Приложение "Управление остатками" -->
@@ -465,15 +500,19 @@
                             <div class="application__item">
                                 <div class="application__subtitle">Мы разработали функционал, которого не хватало</div>
                                 <div class="application__text">
-                                    Приложение "Управление остатками" позволяет вести учет товаров, создавать новые типы документов, справочников и регистров учета. Работает с ранее созданными товарами в модуле Битрикс 24 CRM, раздел Товары, а также с ранее заведенными контактами и сделками.
+                                    Приложение "Управление остатками" позволяет вести учет товаров, создавать новые типы документов,
+                                    справочников и регистров учета. Работает с ранее созданными товарами в модуле Битрикс 24 CRM,
+                                    раздел Товары, а также с ранее заведенными контактами и сделками.
                                 </div>
                                 <div class="application__text application__text--mobile">
-                                    Приложение "Управление остатками" позволяет вести учет товаров, создавать новые типы документов, справочников и регистров учета.
+                                    Приложение "Управление остатками" позволяет вести учет товаров, создавать новые типы документов,
+                                    справочников и регистров учета.
                                 </div>
                                 <div class="application__text application__text--mobile">
-                                    Приложение работает с ранее созданными товарами в модуле Битрикс 24 CRM, раздел Товары, а также с ранее заведенными контактами и сделками, смотрите видео.
+                                    Приложение работает с ранее созданными товарами в модуле Битрикс 24 CRM, раздел Товары, а также
+                                    с ранее заведенными контактами и сделками, смотрите видео.
                                 </div>
-                                <a class="application__link" href="">Подробнее</a>
+                                <a class="application__link" href="#">Подробнее</a>
                                 <div class="application__btn">
                                     <button class="btn btn--blue">Скачать</button>
                                 </div>
@@ -494,7 +533,11 @@
                                 <img src="assets/images/mask-img.png" alt="mask">
                                 <div class="application__video">
                                     <div class="embed">
-                                        <iframe width="1280" height="720" src="https://www.youtube.com/embed/KkQCjfT30iM" title="Битрикс24: Управление остатками - Знакомство с базовым функционалом" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <iframe width="1280" height="720" src="https://www.youtube.com/embed/KkQCjfT30iM"
+                                            title="Битрикс24: Управление остатками - Знакомство с базовым функционалом"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -521,22 +564,19 @@
                                             <img class="contacts-icon" src="assets/images/phone-black.svg" alt="">
                                             +7 (862) 277 70 42
                                         </a>
-                                        <a class="contacts-link" href="mailto:info@designmodo.com">
+                                        <a class="contacts-link" href="mailto:info@uniqtripsoft.ru">
                                             <img class="contacts-icon" src="assets/images/mail-black.svg" alt="">
-                                            info@designmodo.com
+                                            info@uniqtripsoft.ru
                                         </a>
                                     </div>
                                     <div class="feedback__subtitle">
                                         Найдите нас на карте
                                     </div>
-                                    <div class="feedback__address">
-                                        Главный офис: г. Сочи, Олимпийский проспект, 21 , помещение 350 
-                                    </div>
+            
                                     <div class="feedback__address feedback__address--map">
-                                        Отдел продаж: г. Сочи, Триумфальный проезд,1 , офис 2-021
+                                        Главный офис г. Сочи, Триумфальный проезд,1 , офис 2-021
                                     </div>
                                     <div class="js-map feedback__map" id="js-map">
-            
                                     </div>
                                 </div>
                             </div>
@@ -547,23 +587,25 @@
                                 <div class="feedback__text feedback__text--forms">
                                     Мы всегда ищем следующий отличный проект.
                                 </div>
-                                <form class="form form--feedback" action="/" method="post">
+                                <form class="js-form form form--feedback" action="https://uniqtrip.tmweb.ru/feedback">
                                     <div class="form__group">
                                         <label for="">E-mail</label>
-                                        <input class="form__control" type="text" placeholder="Ваш e-mail">
+                                        <input class="form__control js-req js-email" type="email" placeholder="Ваш e-mail" name="email" required>
                                     </div>
                                     <div class="form__group">
                                         <label for="">Cообщение</label>
-                                        <textarea class="form__control form__control--textarea" type="text" placeholder="Напишите нам"></textarea>
+                                        <textarea class="form__control form__control--textarea js-req" type="text"
+                                            placeholder="Напишите нам" name="message"></textarea>
                                     </div>
                                     <div class="form__group">
                                         <label for="">Ваше имя</label>
                                         <div class="form__inner form__inner--feedback">
                                             <div class="form__group form__group--feedback-input">
-                                                <input class="form__control" type="text" placeholder="Имя">
+                                                <input class="form__control js-req" type="text" placeholder="Имя" name="name">
                                             </div>
                                             <div class="form__group form__group--feedback-btn">
-                                                <button class="btn btn--blue" type="button" value="Отправить">Отправить</button>
+                                                <button class="btn btn--blue js-loader" type="submit"
+                                                    value="Отправить">Отправить</button>
                                             </div>
                                         </div>
                                     </div>
@@ -574,7 +616,39 @@
                 </div>
             </section>
             
+            <!-- modal -->
+            <div class="container">
+                <div class="modal js-form-modal">
+                    <div class="modal__content">
+                        <button class="modal__close" type="button">
+                        </button>
             
+                        <form class="js-form form form--feedback" action="https://uniqtrip.tmweb.ru/feedback">
+                            <div class="form__group">
+                                <label for="">E-mail</label>
+                                <input class="form__control js-req js-email" type="email" placeholder="Ваш e-mail" name="email" required>
+                            </div>
+                            <div class="form__group">
+                                <label for="">Cообщение</label>
+                                <textarea class="form__control form__control--textarea js-req" type="text"
+                                    placeholder="Напишите нам" name="message"></textarea>
+                            </div>
+                            <div class="form__group">
+                                <label for="">Ваше имя</label>
+                                <div class="form__inner form__inner--feedback">
+                                    <div class="form__group form__group--feedback-input">
+                                        <input class="form__control js-req" type="text" placeholder="Имя" name="name">
+                                    </div>
+                                    <div class="form__group form__group--feedback-btn">
+                                        <button class="btn btn--blue js-loader" type="submit" value="Отправить">Отправить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+            
+                    </div>
+                </div>
+            </div>
         </main>
 
         
@@ -590,9 +664,9 @@
                                 <img class="contacts-icon" src="assets/images/phone-white.svg" alt="">
                                 +7 (862) 277 70 42
                             </a>
-                            <a class="contacts-link" href="mailto:info@designmodo.com">
+                            <a class="contacts-link" href="mailto:info@uniqtripsoft.ru">
                                 <img class="contacts-icon" src="assets/images/mail-white.svg" alt="">
-                                info@designmodo.com
+                                info@uniqtripsoft.ru
                             </a>
                         </div>
                     </div>
@@ -626,16 +700,16 @@
                             <div class="footer-nav__title">Компания</div>
                             <ul class="footer-nav__list">
                                 <li class="footer-nav__item">
-                                    <a class="footer-nav__link" href="#">Команда</a>
+                                    <a class="footer-nav__link" href="/our-team.html">Команда</a>
                                 </li>
                                 <li class="footer-nav__item">
-                                    <a class="footer-nav__link" href="#">Вакансии</a>
+                                    <a class="footer-nav__link" href="https://sochi.hh.ru/employer/4322397">Вакансии</a>
                                 </li>
                                 <li class="footer-nav__item">
-                                    <a class="footer-nav__link" href="#">Проекты</a>
+                                    <a class="footer-nav__link" href="/projects.html">Проекты</a>
                                 </li>
                                 <li class="footer-nav__item">
-                                    <a class="footer-nav__link" href="#">Контакты</a>
+                                    <a class="footer-nav__link" href="/contact-us.html">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -645,19 +719,52 @@
                             <div class="footer-nav__title">Поддержка</div>
                             <ul class="footer-nav__list">
                                 <li class="footer-nav__item">
-                                    <a class="footer-nav__link" href="#">Заказать звонок </a>
+                                    <button class="footer-nav__link" type="button" data-modal="js-form-modal-contact">Заказать звонок</button>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
             </div>
-        </footer>    </div>
+        </footer>
+        
+        <!-- modal -->
+        <div class="container">
+            <div class="modal js-form-modal-contact">
+                <div class="modal__content modal__content--contact">
+                    <button class="modal__close" type="button">
+                    </button>
+        
+                    <form class="js-form form form--feedback" action="https://uniqtrip.tmweb.ru/feedback">
+                        <div class="form__group">
+                            <label for="">E-mail</label>
+                            <input class="form__control js-req js-email" type="email" placeholder="Ваш e-mail" name="email" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="">Ваше имя</label>
+                            <input class="form__control js-req" type="text" placeholder="Имя" name="name">
+                        </div>
+                        <div class="form__group">
+                            <label for="">Телефон</label>
+                            <input class="form__control js-req js-phone" type="text" name="phone">
+                        </div>
+                        <div class="form__group">
+                            <label for="">Cообщение</label>
+                            <textarea class="form__control form__control--textarea js-req" type="text"
+                                placeholder="Напишите нам" name="message"></textarea>
+                        </div>
+                        <div class="form__group form__group--btn form__group--contact">
+                            <button class="btn btn--blue js-loader" type="submit" value="Отправить">Отправить</button>
+                        </div>
+                    </form>
+        
+                </div>
+            </div>
+        </div>    </div>
 
     <!-- JS -->
     <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-    <script src="assets/js/app-e8c7bc39.js"></script>
-    <!-- <script src="assets/js/vendor/forms.js"></script> -->
+    <script src="assets/js/app-05b97808.js"></script>
 </body>
 
 </html>

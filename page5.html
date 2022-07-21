@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.min-70fb6102.css" />
+    <link rel="stylesheet" href="assets/css/style.min-9fc1d7de.css" />
     <title>Page 5</title>
     
 </head>
@@ -26,16 +26,16 @@
                             <nav class="nav nav-left-mobile">
                                 <ul class="nav__list">
                                     <li class="nav__item">
-                                        <a class="nav__link" href="#">Главная</a>
+                                        <a class="nav__link" href="/">Главная</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a class="nav__link" href="#">Проекты</a>
+                                        <a class="nav__link" href="/projects.html">Проекты</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a class="nav__link" href="#">О компании</a>
+                                        <a class="nav__link" href="/copmany.html">О компании</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a class="nav__link" href="#">Контакты</a>
+                                        <a class="nav__link" href="/contact-us.html">Контакты</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -51,14 +51,6 @@
                                                 </ul>
                                             </div>
                                         </form>
-                                    </li>
-                                    <li class="nav__item">
-                                        <a class="nav__link has-subnav" href="#">RUS</a>
-                                        <ul class="subnav">
-                                            <li>
-                                                <a class="subnav__link" href="#">EN</a>
-                                            </li>
-                                        </ul>
                                     </li>
                                 </ul>
                             </nav>
@@ -92,16 +84,16 @@
                     <nav class="mobile-menu">
                         <ul class="nav__list">
                             <li class="nav__item">
-                                <a class="nav__link" href="#">Главная</a>
+                                <a class="nav__link" href="/">Главная</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="#">Проекты</a>
+                                <a class="nav__link" href="/projects.html">Проекты</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="#">О компании</a>
+                                <a class="nav__link" href="/company">О компании</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="#">Контакты</a>
+                                <a class="nav__link" href="/contact-us.html">Контакты</a>
                             </li>
                             <li class="nav__item">
                                 <a class="nav__link" href="#">Битрикс 24</a>
@@ -136,7 +128,7 @@
             <section class="section section--about-project">
                 <div class="container">
                     <div class="about-project">
-                        <a class="about-project__link link-underline" href="https://visit-sochi.com" target="_blank">Visit-sochi.com</a>
+                        <div class="about-project__subtitle">Visit-sochi.com</div>
                         <div class="about-project__mobile-text">собран и наполняется заказчиком</div>
                         <h2 class="about-project__title title">О проекте</h2>
                         <div class="about-project__text text">
@@ -207,7 +199,7 @@
                         <div class="form__inner form__inner--orange">
                             <div class="form__group">
                                 <label for="email">E-mail</label>
-                                <input class="form__control js-req js-email" id="email" type="text" placeholder="Ваш e-mail" name="email">
+                                <input class="form__control js-req js-email" id="email" type="email" placeholder="Ваш e-mail" name="email" required>
                             </div>
                             <div class="form__group">
                                 <label for="name">Ваше имя</label>
@@ -222,9 +214,8 @@
                             *Нажимая кнопку, вы даете свое согласие на обработку <a href="#">персональных данных</a>
                         </div>
                        
-                       
-                        <div class="form__group form__group--btn loader-btn">
-                            <button class="btn btn--blue" type="submit" value="Отправить">Отправить</button>
+                        <div class="form__group form__group--btn">
+                            <button class="btn btn--blue js-loader" type="submit" value="Отправить">Отправить</button>
                         </div>
                     </form>
                 </div>
@@ -237,40 +228,46 @@
                     <div class="js-slider-swiper-project slider-swiper slider-swiper--project swiper">
                         <div class="slider-swiper__wrapper swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="projects__card" style="background-image: url('assets/images/project/01.png');">
-                                    <div class="projects__content">
-                                        <div class="projects__title">
-                                            Visit-sochi.com
-                                        </div>
-                                        <div class="projects__text">
-                                            Создание официального портал города Сочи, который удовлетворит все потребности туриста: от бронирования размещения, до заказа экскурсий и гастрономических путешествий
+                                <a class="projects__link" href="https://visit-sochi.com" target="_blank">
+                                    <div class="projects__card" style="background-image: url('assets/images/project/01.png');">
+                                        <div class="projects__content">
+                                            <div class="projects__title">
+                                                Visit-sochi.com
+                                            </div>
+                                            <div class="projects__text">
+                                                Создание официального портал города Сочи, который удовлетворит все потребности туриста: от бронирования размещения, до заказа экскурсий и гастрономических путешествий
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="swiper-slide">
-                                <div class="projects__card" style="background-image: url('assets/images/project/02.png');">
-                                    <div class="projects__content">
-                                        <div class="projects__title">
-                                            Visit-sochi.com
-                                        </div>
-                                        <div class="projects__text">
-                                            Создание официального портал города Сочи, который удовлетворит все потребности туриста: от бронирования размещения, до заказа экскурсий и гастрономических путешествий
+                                <a class="projects__link" href="https://visit-sochi.com" target="_blank">
+                                    <div class="projects__card" style="background-image: url('assets/images/project/02.png');">
+                                        <div class="projects__content">
+                                            <div class="projects__title">
+                                                Visit-sochi.com
+                                            </div>
+                                            <div class="projects__text">
+                                                Создание официального портал города Сочи, который удовлетворит все потребности туриста: от бронирования размещения, до заказа экскурсий и гастрономических путешествий
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="swiper-slide">
-                                <div class="projects__card" style="background-image: url('assets/images/project/02.png');">
-                                    <div class="projects__content">
-                                        <div class="projects__title">
-                                            Visit-sochi.com
-                                        </div>
-                                        <div class="projects__text">
-                                            Создание официального портал города Сочи, который удовлетворит все потребности туриста: от бронирования размещения, до заказа экскурсий и гастрономических путешествий
+                                <a class="projects__link" href="https://visit-sochi.com" target="_blank">
+                                    <div class="projects__card" style="background-image: url('assets/images/project/02.png');">
+                                        <div class="projects__content">
+                                            <div class="projects__title">
+                                                Visit-sochi.com
+                                            </div>
+                                            <div class="projects__text">
+                                                Создание официального портал города Сочи, который удовлетворит все потребности туриста: от бронирования размещения, до заказа экскурсий и гастрономических путешествий
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div class="js-arrow-prev swiper-button-prev swiper-button-prev-arrow"></div>
@@ -294,9 +291,9 @@
                                 <img class="contacts-icon" src="assets/images/phone-white.svg" alt="">
                                 +7 (862) 277 70 42
                             </a>
-                            <a class="contacts-link" href="mailto:info@designmodo.com">
+                            <a class="contacts-link" href="mailto:info@uniqtripsoft.ru">
                                 <img class="contacts-icon" src="assets/images/mail-white.svg" alt="">
-                                info@designmodo.com
+                                info@uniqtripsoft.ru
                             </a>
                         </div>
                     </div>
@@ -330,16 +327,16 @@
                             <div class="footer-nav__title">Компания</div>
                             <ul class="footer-nav__list">
                                 <li class="footer-nav__item">
-                                    <a class="footer-nav__link" href="#">Команда</a>
+                                    <a class="footer-nav__link" href="/our-team.html">Команда</a>
                                 </li>
                                 <li class="footer-nav__item">
-                                    <a class="footer-nav__link" href="#">Вакансии</a>
+                                    <a class="footer-nav__link" href="https://sochi.hh.ru/employer/4322397">Вакансии</a>
                                 </li>
                                 <li class="footer-nav__item">
-                                    <a class="footer-nav__link" href="#">Проекты</a>
+                                    <a class="footer-nav__link" href="/projects.html">Проекты</a>
                                 </li>
                                 <li class="footer-nav__item">
-                                    <a class="footer-nav__link" href="#">Контакты</a>
+                                    <a class="footer-nav__link" href="/contact-us.html">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -349,19 +346,52 @@
                             <div class="footer-nav__title">Поддержка</div>
                             <ul class="footer-nav__list">
                                 <li class="footer-nav__item">
-                                    <a class="footer-nav__link" href="#">Заказать звонок </a>
+                                    <button class="footer-nav__link" type="button" data-modal="js-form-modal-contact">Заказать звонок</button>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
             </div>
-        </footer>    </div>
+        </footer>
+        
+        <!-- modal -->
+        <div class="container">
+            <div class="modal js-form-modal-contact">
+                <div class="modal__content modal__content--contact">
+                    <button class="modal__close" type="button">
+                    </button>
+        
+                    <form class="js-form form form--feedback" action="https://uniqtrip.tmweb.ru/feedback">
+                        <div class="form__group">
+                            <label for="">E-mail</label>
+                            <input class="form__control js-req js-email" type="email" placeholder="Ваш e-mail" name="email" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="">Ваше имя</label>
+                            <input class="form__control js-req" type="text" placeholder="Имя" name="name">
+                        </div>
+                        <div class="form__group">
+                            <label for="">Телефон</label>
+                            <input class="form__control js-req js-phone" type="text" name="phone">
+                        </div>
+                        <div class="form__group">
+                            <label for="">Cообщение</label>
+                            <textarea class="form__control form__control--textarea js-req" type="text"
+                                placeholder="Напишите нам" name="message"></textarea>
+                        </div>
+                        <div class="form__group form__group--btn form__group--contact">
+                            <button class="btn btn--blue js-loader" type="submit" value="Отправить">Отправить</button>
+                        </div>
+                    </form>
+        
+                </div>
+            </div>
+        </div>    </div>
 
     <!-- JS -->
     <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-    <script src="assets/js/app-e8c7bc39.js"></script>
-    <!-- <script src="assets/js/vendor/forms.js"></script> -->
+    <script src="assets/js/app-05b97808.js"></script>
 </body>
 
 </html>
