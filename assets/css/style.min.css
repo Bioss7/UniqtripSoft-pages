@@ -4108,6 +4108,8 @@ body {
   font-size: 14px;
   line-height: 1.1;
   color: #727272; }
+  .search__input:focus ~ .search__dropdown {
+    display: block; }
 
 .search__dropdown {
   position: absolute;
